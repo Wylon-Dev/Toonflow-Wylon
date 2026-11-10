@@ -1,0 +1,31 @@
+name: Bug report / 错误报告
+description: Report a reproducible provider problem / 反馈可复现问题
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Remove keys, full signed URLs, host settings and private media. Use [private vulnerability reporting](https://github.com/wylon-cloud/toonflow-wylon/security/advisories/new) for sensitive security details. 请移除密钥、完整签名 URL、宿主设置和私密媒体；敏感安全问题请使用上述私密漏洞报告入口。"
+  - type: input
+    id: versions
+    attributes:
+      label: Host, provider and OS versions / 宿主、供应商与系统版本
+      placeholder: "Toonflow v2.0.10; Wylon 0.2.0"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected and actual result / 步骤、预期与实际结果
+      description: Include model/mode, safe inputs and whether optional patch is installed. 包含模型/模式、安全输入和可选补丁状态。
+    validations:
+      required: true
+  - type: textarea
+    id: accepted
+    attributes:
+      label: Task accepted and recovery status / 任务是否接单及恢复状态
+      description: Do not create another paid task just to reproduce. 不要为复现重复创建付费任务。
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence / 脱敏证据
+      description: Never include keys or full signed URLs. 不得包含密钥或完整签名 URL。

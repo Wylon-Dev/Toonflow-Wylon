@@ -1,0 +1,15 @@
+name: Feature request / 功能建议
+description: Describe a concrete workflow need / 说明具体使用需求
+title: "[Feature] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Workflow problem and expected behavior / 使用问题与预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Host/model versions, constraints and alternatives / 宿主模型版本、限制及替代方案
+      description: Exclude credentials, full signed URLs and private media. 不要包含凭据、完整签名 URL 或私密媒体。

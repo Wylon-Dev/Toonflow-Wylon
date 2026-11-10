@@ -1,0 +1,5 @@
+--- a/apps/server/src/utils/media/generation.ts
++++ b/apps/server/src/utils/media/generation.ts
+@@ -164,1 +164,1 @@
+-  const referenceOrder = mediaType === "video" && ["toonflow", "apiMart", "metaso", "compshare"].includes(request.providerId) ? request.referenceOrder : undefined;
++  const referenceOrder = mediaType === "video" && ["toonflow", "apiMart", "metaso", "compshare", "wylon"].includes(request.providerId) ? request.referenceOrder : undefined;
